@@ -1,0 +1,162 @@
+body {
+    font-family: sans-serif;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 64px;
+    font-weight: 200;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+nav {
+    width: 100vw;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px 40px;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+nav a:hover {
+    color: #1d58e2;
+}
+
+.button {
+    all: unset;
+    padding: 15px 20px;
+    width: fit-content;
+    min-width: 75px;
+    text-align: center;
+    color: white;
+    background-color: #1d58e2;
+    border-radius: 30px;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.black {
+    background-color: black;
+}
+
+.button:hover {
+    color: white;
+    opacity: 75%;
+}
+
+.hero {
+    padding: 20vh 10vw 0;
+    background-color: pink;
+    min-height: 100vh;
+    display: flex;
+}
+
+.color-change {
+    background-color: aquamarine;
+}
+
+#modal {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(100,100,100,.5);
+    backdrop-filter: blur(8px);
+}
+
+.show {
+    display: flex !important;
+}
+
+.translate {
+    transform: translateY(10vh);
+    transition: 200ms;
+}
+
+.form-container {
+    width: fit-content;
+    padding: 20px 50px 50px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    transform: translateY(-20vh);
+    opacity: 0%;
+    transition: 300ms;
+    box-shadow: 5px 5px 8px rgba(100,100,100,.8);
+}
+
+.translate {
+    transform: translateY(-5vh) !important;
+    opacity: 100% !important;
+    transition: 200ms;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    all: unset;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: solid 1px black;
+}
+
+input:focus {
+    border: solid 1px blue;
+    box-shadow: 1px 1px 10px rgba(100,100,100,.5);
+}
+
+.close {
+    margin: -5px -5px 0 0;
+    width: 30px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    background-color: black;
+    border: solid 3px white;
+    color: white;
+    font-weight: 800;
+    line-height: 1em;
+    box-shadow: 1px 1px 10px black;
+    cursor: pointer;
+}
+
+.close:hover {
+    opacity: 75%;
+}
